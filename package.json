@@ -1,0 +1,32 @@
+{
+  "name": "petfinder-api-client",
+  "author": {
+    "name": "Phillip Dupuis",
+    "email": "phillip_dupuis@alumni.brown.edu"
+  },
+  "version": "0.7.0",
+  "type": "module",
+  "types": "./dist/petfinder-api-client.d.ts",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/petfinder-api-client.umd.cjs",
+  "module": "./dist/petfinder-api-client.js",
+  "exports": {
+    ".": {
+      "import": "./dist/petfinder-api-client.js",
+      "require": "./dist/petfinder-api-client.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "~5.6.2",
+    "vite": "^6.0.1",
+    "vite-plugin-dts": "^4.3.0"
+  }
+}
